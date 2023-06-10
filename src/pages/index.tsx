@@ -35,10 +35,16 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='flex-col h-fit w-full bg-gray-700 p-5' id="user_layout">
-          <p>
-            TODO: USER LAYOUT
-          </p>
+        <div className='flex h-fit w-full bg-gray-700 px-48 py-16' id="user_layout">
+          
+          <div className='rounded-full h-96 w-96 bg-blue-500' id="avatar">
+            
+          </div>
+
+          <div className='flex-col h-max w-max px-24'>
+            <p className='text-3xl text-center'> testestetst</p>
+
+          </div>
           
         </div>
         
