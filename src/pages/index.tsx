@@ -35,11 +35,18 @@ export default function Home() {
           </div>
         </div>
 
-        {/* <div className='absolute flex h-screen w-full'>
-          <div className='absolute flex h-screen w-full bg-gray-700'>
-            
-          </div>
-        </div> */}
+        <div className='flex-col h-fit w-full bg-gray-700 p-5' id="user_layout">
+          <p>
+            TODO: USER LAYOUT
+          </p>
+          
+        </div>
+        
+        <div className='relative h-fit w-full bg-gray-500 p-5' id="projects_layout">
+          <p>
+            TODO: PROJECTS LAYOUT
+          </p>
+        </div>
 
       </div>
       
