@@ -35,25 +35,32 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='flex h-fit w-full bg-gray-700 px-48 py-16' id="user_layout">
+        <div className='flex h-fit w-full bg-gray-700 space-x-16 py-12 px-48' id="user_layout">
           
-          <div className='rounded-full h-96 w-96 bg-blue-500' id="avatar">
-            
-          </div>
+          <div className='rounded-full h-64 w-64 bg-gray-100' id="avatar"></div>
 
-          <div className='flex-col h-max w-max px-24'>
-            <p className='text-3xl text-center'> testestetst</p>
-
+          <div className='flex-col min-w-screen m-10 space-y-5'>
+            <p className='text-2xl font-medium'>Mr.AvionicsSkunk</p>
+            <p className='text-lg font-light w-2/3'>ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem sdasdasd asda sda sda sda sda sda sda sd</p>
           </div>
           
         </div>
         
-        <div className='relative h-fit w-full bg-gray-500 p-5' id="projects_layout">
-          <p>
-            TODO: PROJECTS LAYOUT
-          </p>
+        <div className='flex-col h-fit w-full bg-gray-800 py-16' id="projects_layout">
+          <p className='flex justify-left text-6xl font-medium pb-6 px-24'>Projects</p>
+          <p className='flex justify-left text-lg font-thin pb-12 px-24 w-2/3'>Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem </p>
+          <div className='flex h-96 w-full justify-center px-24 py-6'>
+            <button className='w-1/3 bg-blue-500 hover:bg-blue-700 hover:shadow-inner-xl text-3xl font-thin hover:font-normal'>Embedded & Rocketry</button>
+            <button className='w-1/3 bg-yellow-500 hover:bg-yellow-700 text-3xl font-thin hover:font-normal'>Software Application</button>
+            <button className='w-1/3 bg-red-500 hover:bg-red-700 text-3xl font-thin hover:font-normal'>AI Research</button>
+          </div>
         </div>
 
+        <div className='flex h-fit w-full bg-gray-900 p-4 justify-center space-x-1'>
+          <p className='font-thin'>🖥️ Created by niekky</p>
+          <p>|</p>
+          <button className='font-medium hover:font-bold'>Folium GitHub 🚀</button>
+        </div>
       </div>
       
     </main>
