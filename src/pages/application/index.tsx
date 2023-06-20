@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className='Parent'>
       <div className='flex-col w-full h-screen bg-gray-600'>
-        <div className='flex-col w-full h-1/3 bg-yellow-500' id='intro_background'>
+        <div className='flex-col w-full h-2/4 bg-yellow-500' id='intro_background'>
           <nav id="top_bar">
             <div className='justify-between px-20 py-6 hidden w-full md:block md:w-auto'>
               <ul className="flex justify-end font-normal text-2xl flex flex-col md:flex-row md:space-x-12">
@@ -24,7 +24,7 @@ export default function Home() {
               </ul>
             </div>
           </nav>
-          <p className='flex px-24 font-medium text-6xl py-16'>Software Application</p>
+          <p className='flex px-24 font-normal text-6xl py-16'>Software Application</p>
         </div>
         
         <div className='flex-col w-full h-1/3 bg-yellow-700 px-24 py-12 space-y-4' id='detail'>
@@ -65,30 +65,23 @@ export default function Home() {
           
         </div> */}
 
-        <div className='grid grid-cols-3 w-full bg-gray-800 px-64 py-24 gap-y-32'>
-          <div className='flex-col w-full space-y-5 px-12'>
+        <div className='grid grid-cols-2 w-full bg-gray-800 px-48 py-24 gap-y-24 gap-x-24'>
+          <div className='flex-col w-full col-span-1 space-y-5 p-12 '>
             <p className='flex font-normal text-3xl justify-center'>Title like this long</p>
             <p className='flex font-thin text-lg'>ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
           </div>
-          <div className='flex-col w-full h-[512px] col-span-2 bg-yellow-500'>
+          <div className='flex-col w-full h-[520px] col-span-1 bg-yellow-500'>
             <p className='flex justify-center'>picture</p>
           </div>
 
-          <div className='flex-col w-full h-[512px] col-span-2 bg-yellow-500'>
+          <div className='flex-col w-full h-[520px] col-span-1 bg-yellow-500'>
             <p className='flex justify-center'>picture</p>
           </div>
-          <div className='flex-col w-full space-y-5 px-12'>
+          <div className='flex-col w-full col-span-1 space-y-5 p-12'>
             <p className='flex font-normal text-3xl justify-center'>Title</p>
             <p className='flex font-thin text-lg'>ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
           </div>
           
-          <div className='flex-col w-full space-y-5 px-12'>
-            <p className='flex font-normal text-3xl justify-center'>Title like this long</p>
-            <p className='flex font-thin text-lg'>ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
-          </div>
-          <div className='flex-col w-full h-[512px] col-span-2 bg-yellow-500'>
-            <p className='flex justify-center'>picture</p>
-          </div>
 
         </div>
 
