@@ -20,7 +20,7 @@ export default function Home() {
   )
   return (
     <div className='Parent'>
-     <div className='flex-col w-full h-screenx bg-gray-600'>
+     <div className='flex-col w-full bg-gray-600'>
       
       <nav id="top_bar">
         <div className='justify-between px-20 py-6 hidden w-full md:block md:w-auto'>
