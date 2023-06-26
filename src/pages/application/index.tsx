@@ -24,11 +24,11 @@ export default function Home() {
               </ul>
             </div>
           </nav>
-          <p className='flex px-24 font-normal text-6xl py-16'>Software Application</p>
+          <p className='flex font-normal text-6xl px-24 py-28'>Software Application</p>
         </div>
         
-        <div className='flex-col w-full h-1/3 bg-yellow-700 px-24 py-12 space-y-4' id='detail'>
-          <p className='flex font-normal text-2xl'>Overview</p>
+        <div className='flex-col w-full h-1/3 bg-gray-700 px-24 py-12 space-y-4' id='detail'>
+          <p className='flex font-medium text-3xl'>Overview</p>
           <p className='flex font-thin text-lg w-2/3'>ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
         </div>
        
