@@ -22,7 +22,7 @@ export default function Home() {
       <div className='Parent'>
         
         <div className='w-full h-screen bg-[url("/rocket_launch.jpg")] bg-cover bg-center]'>
-          <div className='w-full h-full justify-center items-center backdrop-blur-sm' id='background_blur'>
+          <div className='w-full h-full justify-center items-center transition duration-700 ease-in-out backdrop-blur hover:backdrop-blur-none' id='background_blur'>
             <nav id="top_bar">
               <div className='justify-between px-24 py-4 hidden w-full md:block md:w-auto'>
                 <ul className="flex justify-end font-normal text-2xl flex flex-col md:flex-row md:space-x-12">
@@ -38,7 +38,7 @@ export default function Home() {
                 </ul>
               </div>
             </nav>
-            <div className='flex-col w-full h-full px-32 py-96' id='intro_caption'>
+            <div className='flex-col w-full h-full px-32 py-96 transition delay-1000 translate-x-[-900px] translate-x-0 ease-in-out duration-700' id='intro_caption'>
               <h1 className='text-left text-5xl font-thin'>Hi, my name is ipsum lorem</h1>
               <p className='text-left text-8xl font-medium'>This is my Folium</p>
             </div>
@@ -73,9 +73,9 @@ export default function Home() {
           <p className='flex justify-left text-6xl font-medium pb-6'>Projects</p>
           <p className='flex justify-left text-lg font-thin pb-12 w-2/3'>Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem </p>
           <div className='flex h-96 w-full justify-center py-6'>
-            <Link href={"/sdr"} className='flex w-1/3 bg-blue-500 hover:bg-blue-700 hover:shadow-inner-xl text-3xl font-thin hover:font-normal items-center justify-center'>Embedded & Rocketry</Link>
-            <Link href={"/application"} className='flex w-1/3 bg-yellow-500 hover:bg-yellow-700 text-3xl font-thin hover:font-normal items-center justify-center'>Software Application</Link>
-            <Link href={"/research"} className='flex w-1/3 bg-red-500 hover:bg-red-700 text-3xl font-thin hover:font-normal items-center justify-center'>AI Research</Link>
+            <Link href={"/sdr"} className='flex w-1/3 bg-blue-500 hover:bg-blue-700 hover:shadow-inner-xl text-3xl font-thin hover:font-normal items-center justify-center transition ease-in-out duration-300 hover:scale-110 hover:-translate-y-1'>Embedded & Rocketry</Link>
+            <Link href={"/application"} className='flex w-1/3 bg-yellow-500 hover:bg-yellow-700 text-3xl font-thin hover:font-normal items-center justify-center transition ease-in-out duration-300 hover:scale-110 hover:-translate-y-1'>Software Application</Link>
+            <Link href={"/research"} className='flex w-1/3 bg-red-500 hover:bg-red-700 text-3xl font-thin hover:font-normal items-center justify-center transition ease-in-out duration-300 hover:scale-110 hover:-translate-y-1'>AI Research</Link>
           </div>
         </div>
 
