@@ -24,7 +24,7 @@ export default function Home() {
         <div className='w-full h-screen bg-[url("/rocket_launch.jpg")] bg-cover bg-center]'>
           <div className='w-full h-full justify-center items-center backdrop-blur-sm' id='background_blur'>
             <nav id="top_bar">
-              <div className='justify-between px-24 py-6 hidden w-full md:block md:w-auto'>
+              <div className='justify-between px-24 py-4 hidden w-full md:block md:w-auto'>
                 <ul className="flex justify-end font-normal text-2xl flex flex-col md:flex-row md:space-x-12">
                   <li>
                     <button onClick={scrollToTop} className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</button>
