@@ -21,8 +21,8 @@ export default function Home() {
     <main>
       <div className='Parent'>
         
-        <div className='w-full h-screen bg-[url("/img/rocket_launch.jpg")] bg-cover bg-center]'>
-          <div className='w-full h-full justify-center items-center transition duration-700 ease-in-out backdrop-blur hover:backdrop-blur-none' id='background_blur'>
+        <div className='w-full h-screen bg-[url("/img/mcbombpop.gif")] bg-cover bg-center'>
+          <div className='flex-col w-full h-full justify-center items-center transition duration-700 ease-in-out backdrop-blur-lg backdrop-brightness-75 hover:backdrop-blur-none' id='background_blur'>
             <nav id="top_bar">
               <div className='justify-between px-24 py-4 hidden w-full md:block md:w-auto'>
                 <ul className="flex justify-end font-normal text-2xl flex flex-col md:flex-row md:space-x-12">
@@ -38,9 +38,9 @@ export default function Home() {
                 </ul>
               </div>
             </nav>
-            <div className='flex-col w-full h-full px-32 py-96 transition translate-x-[-900px] hover:translate-x-0 ease-in-out duration-700' id='intro_caption'>
-              <h1 className='text-left text-5xl font-thin'>Hi, my name is ipsum lorem</h1>
-              <p className='text-left text-8xl font-medium'>This is my Folium</p>
+            <div className='flex-col w-full h-full px-32 py-96 transition translate-x-[-600px] hover:translate-x-0 ease-in-out duration-700' id='intro_caption'>
+              <h1 className='text-left text-4xl font-thin w-full'>Hi, my name is ipsum lorem</h1>
+              <p className='text-left text-6xl font-medium'>This is my Folium</p>
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ export default function Home() {
 
         <div className='flex h-fit w-full bg-gray-700 space-x-16 py-12 px-48' id="user_layout">
           
-          <Link href={"/contact"} className='rounded-full h-64 w-64 bg-gray-100 transition ease-in-out duration-300 hover:scale-110' id="avatar"></Link>
+          <Link href={"/contact"} className='rounded-full h-64 w-64 bg-[url("/img/elephantmario.jpg")] bg-center   transition ease-in-out duration-300 hover:scale-110' id="avatar"></Link>
 
           <div className='flex-col min-w-screen m-10 space-y-5'>
             <p className='text-2xl font-medium'>Mr.AvionicsSkunk</p>
@@ -73,9 +73,21 @@ export default function Home() {
           <p className='flex justify-left text-6xl font-medium pb-6'>Projects</p>
           <p className='flex justify-left text-lg font-thin pb-12 w-2/3'>Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem </p>
           <div className='flex h-96 w-full justify-center py-6'>
-            <Link href={"/sdr"} className='flex w-1/3 bg-blue-500 hover:bg-blue-700 hover:shadow-inner-xl text-3xl font-thin hover:font-normal items-center justify-center transition ease-in-out duration-300 hover:scale-110 hover:-translate-y-1'>Embedded & Rocketry</Link>
-            <Link href={"/application"} className='flex w-1/3 bg-yellow-500 hover:bg-yellow-700 text-3xl font-thin hover:font-normal items-center justify-center transition ease-in-out duration-300 hover:scale-110 hover:-translate-y-1'>Software Application</Link>
-            <Link href={"/research"} className='flex w-1/3 bg-red-500 hover:bg-red-700 text-3xl font-thin hover:font-normal items-center justify-center transition ease-in-out duration-300 hover:scale-110 hover:-translate-y-1'>AI Research</Link>
+            <Link href={"/sdr"} className='flex w-1/3 bg-[url("/img/flightcomputer.png")] bg-center bg-cover text-3xl font-thin items-center justify-center transition ease-in-out duration-300 hover:font-normal hover:shadow-inner-xl hover:scale-110 hover:-translate-y-1'>
+              <div className='flex w-full h-full backdrop-blur-sm backdrop-brightness-75 items-center justify-center transition ease-in-out duration-300 hover:backdrop-blur-none'>
+                Embedded & Rocketry
+              </div>
+            </Link>
+            <Link href={"/application"} className='flex w-1/3 bg-[url("/img/softwaresample.jpeg")] bg-center bg-cover text-3xl font-thin items-center justify-center transition ease-in-out duration-300 hover:font-normal hover:shadow-inner-xl hover:scale-110 hover:-translate-y-1'>
+              <div className='flex w-full h-full backdrop-blur-sm backdrop-brightness-75 items-center justify-center transition ease-in-out duration-300 hover:backdrop-blur-none'>
+                Software Application
+              </div>
+            </Link>
+            <Link href={"/research"} className='flex w-1/3 bg-[url("/img/AIsample.jpg")] bg-center bg-cover text-3xl font-thin items-center justify-center transition ease-in-out duration-300 hover:font-normal hover:shadow-inner-xl hover:scale-110 hover:-translate-y-1'>
+              <div className='flex w-full h-full backdrop-blur-sm backdrop-brightness-50 items-center justify-center transition ease-in-out duration-300 hover:backdrop-blur-none'>
+                AI Research
+              </div>
+            </Link>
           </div>
         </div>
 

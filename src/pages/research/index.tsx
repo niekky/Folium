@@ -31,23 +31,25 @@ export default function Home() {
     <div className='Parent'>
       <div className='flex-col w-full bg-gray-600'>
         
-        <div className='flex-col w-full bg-red-500' id='intro_background'>
-          <nav id="top_bar">
-            <div className='justify-between px-24 py-6 hidden w-full md:block md:w-auto'>
-              <ul className="flex justify-end font-normal text-2xl flex flex-col md:flex-row md:space-x-12">
-                <li>
-                  <a href='/' className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" aria-current="page">Home</a>
-                </li>
-                <li>
-                  <a href='/' className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">Projects</a>
-                </li>
-                <li>
-                  <a href="contact" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Me</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <p className='flex font-medium text-6xl px-48 py-36'>AI Research</p>
+        <div className='flex-col w-full bg-[url("/img/AIsample.jpg")] bg-cover bg-center' id='intro_background'>
+          <div className='flex-col w-full h-full backdrop-brightness-50'>
+            <nav id="top_bar">
+              <div className='justify-between px-24 py-6 hidden w-full md:block md:w-auto'>
+                <ul className="flex justify-end font-normal text-2xl flex flex-col md:flex-row md:space-x-12">
+                  <li>
+                    <a href='/' className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" aria-current="page">Home</a>
+                  </li>
+                  <li>
+                    <a href='/' className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500">Projects</a>
+                  </li>
+                  <li>
+                    <a href="contact" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Me</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <p className='flex font-medium text-6xl px-48 py-36'>AI Research</p>
+          </div>
         </div>
         
         <div className='flex-col w-full h-fit bg-gray-700 px-48 py-24 space-y-4' id='detail'>
