@@ -12,6 +12,21 @@ function scrollToProject(){
   window.scrollTo({ top: 730, behavior: 'smooth' });
 }
 
+function display_project(desc: string, img: string){
+  return (
+    <div className='flex-col h-[420px]'>
+      <div className='flex bg-blue-500 w-full h-5/6 transition ease-in-out duration-300 hover:scale-110 hover:bg-opacity-50' id='project_img'>
+        <div className='flex-col w-full h-full p-12 space-y-3 opacity-0 hover:opacity-100' id='project_desc'>
+          <p className='text-2xl font-normal'>DescriptionName:</p>
+          <p className='font-thin'>ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
+          {/* <Link href={""} className='hover:font-medium'>Status: Null</Link> */}
+        </div>
+      </div>
+      <p className='flex h-1/6 w-full text-center justify-center text-xl items-center' id='project_name'>Description</p>
+    </div>
+  )
+}
+
 export default function Home() {
   return (
     <div className='Parent'>
@@ -45,46 +60,10 @@ export default function Home() {
           <button onClick={scrollToProject} className='flex w-full font-thin justify-center text-3xl p-12 hover:font-normal'>Projects ↓</button>
           <div className='flex w-full h-fit'>
             <div className='grid grid-cols-2 w-full bg-gray-900 mx-48 mt-12 mb-32 py-24 px-32 gap-x-16 gap-y-24'>
-              <div className='flex-col h-[420px] '>
-                <div className='flex bg-blue-500 w-full h-5/6 hover:bg-opacity-50' id='project_img'>
-                  <div className='flex-col w-full h-full p-12 space-y-3 opacity-0 hover:opacity-100' id='project_desc'>
-                    <p className='text-2xl font-normal'>DescriptionName:</p>
-                    <p className='font-thin'>ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
-                    {/* <Link href={""} className='hover:font-medium'>Status: Null</Link> */}
-                  </div>
-                </div>
-                <p className='flex h-1/6 w-full text-center justify-center text-xl items-center' id='project_name'>Description</p>
-              </div>
-              <div className='flex-col h-[420px] '>
-                <div className='flex bg-blue-500 w-full h-5/6 hover:bg-opacity-50' id='project_img'>
-                  <div className='flex-col w-full h-full p-12 space-y-3 opacity-0 hover:opacity-100' id='project_desc'>
-                    <p className='text-2xl font-normal'>DescriptionName:</p>
-                    <p className='font-thin'>ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
-                    {/* <Link href={""} className='hover:font-medium'>Status: Null</Link> */}
-                  </div>
-                </div>
-                <p className='flex h-1/6 w-full text-center justify-center text-xl items-center' id='project_name'>Description</p>
-              </div>
-              <div className='flex-col h-[420px] '>
-                <div className='flex bg-blue-500 w-full h-5/6 hover:bg-opacity-50' id='project_img'>
-                  <div className='flex-col w-full h-full p-12 space-y-3 opacity-0 hover:opacity-100' id='project_desc'>
-                    <p className='text-2xl font-normal'>DescriptionName:</p>
-                    <p className='font-thin'>ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
-                    {/* <Link href={""} className='hover:font-medium'>Status: Null</Link> */}
-                  </div>
-                </div>
-                <p className='flex h-1/6 w-full text-center justify-center text-xl items-center' id='project_name'>Description</p>
-              </div>
-              <div className='flex-col h-[420px] '>
-                <div className='flex bg-blue-500 w-full h-5/6 hover:bg-opacity-50' id='project_img'>
-                  <div className='flex-col w-full h-full p-12 space-y-3 opacity-0 hover:opacity-100' id='project_desc'>
-                    <p className='text-2xl font-normal'>DescriptionName:</p>
-                    <p className='font-thin'>ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem</p>
-                    {/* <Link href={""} className='hover:font-medium'>Status: Null</Link> */}
-                  </div>
-                </div>
-                <p className='flex h-1/6 w-full text-center justify-center text-xl items-center' id='project_name'>Description</p>
-              </div>
+             {display_project("","")}
+             {display_project("","")}
+             {display_project("","")}
+             {display_project("","")} 
             </div>
           </div>
           

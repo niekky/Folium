@@ -21,7 +21,7 @@ export default function Home() {
     <main>
       <div className='Parent'>
         
-        <div className='w-full h-screen bg-[url("/rocket_launch.jpg")] bg-cover bg-center]'>
+        <div className='w-full h-screen bg-[url("/img/rocket_launch.jpg")] bg-cover bg-center]'>
           <div className='w-full h-full justify-center items-center transition duration-700 ease-in-out backdrop-blur hover:backdrop-blur-none' id='background_blur'>
             <nav id="top_bar">
               <div className='justify-between px-24 py-4 hidden w-full md:block md:w-auto'>
@@ -38,7 +38,7 @@ export default function Home() {
                 </ul>
               </div>
             </nav>
-            <div className='flex-col w-full h-full px-32 py-96 transition delay-1000 translate-x-[-900px] translate-x-0 ease-in-out duration-700' id='intro_caption'>
+            <div className='flex-col w-full h-full px-32 py-96 transition translate-x-[-900px] hover:translate-x-0 ease-in-out duration-700' id='intro_caption'>
               <h1 className='text-left text-5xl font-thin'>Hi, my name is ipsum lorem</h1>
               <p className='text-left text-8xl font-medium'>This is my Folium</p>
             </div>
@@ -48,7 +48,7 @@ export default function Home() {
 
         <div className='flex h-fit w-full bg-gray-700 space-x-16 py-12 px-48' id="user_layout">
           
-          <div className='rounded-full h-64 w-64 bg-gray-100' id="avatar"></div>
+          <Link href={"/contact"} className='rounded-full h-64 w-64 bg-gray-100 transition ease-in-out duration-300 hover:scale-110' id="avatar"></Link>
 
           <div className='flex-col min-w-screen m-10 space-y-5'>
             <p className='text-2xl font-medium'>Mr.AvionicsSkunk</p>
