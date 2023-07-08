@@ -35,4 +35,4 @@ yarn-error.log*
 next-env.d.ts
 
 # Images and Components
-public
+# public
