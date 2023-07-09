@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
-
 const inter = Inter({ subsets: ['latin'] })
 
 const isBrowser = () => typeof window !== 'undefined';
@@ -9,7 +8,7 @@ const isBrowser = () => typeof window !== 'undefined';
 function display_project(name: string, desc: string, img: string){
   return (
     <div className='flex-col h-[420px]'>
-      <div className='flex bg-yellow-500 w-full h-5/6 transition ease-in-out duration-300 hover:scale-110 hover:bg-opacity-50' id='project_img'>
+      <div className='flex bg-[url({img})] w-full h-5/6 transition ease-in-out duration-300 hover:scale-110 hover:bg-opacity-50' id='project_img'>
         <div className='flex-col w-full h-full p-12 space-y-3 opacity-0 hover:opacity-100' id='project_desc'>
           <p className='text-2xl font-normal'>{name}</p>
           <p className='font-thin'>{desc}</p>
@@ -31,7 +30,7 @@ export default function Home() {
     <div className='Parent'>
       <div className='flex-col w-full bg-gray-600'>
         
-        <div className='flex-col w-full bg-[url("/img/softwaresample.jpeg")] bg-cover' id='intro_background'>
+        <div className='flex-col w-full bg-gray-100 bg-cover' id='intro_background'>
           <div className='flex-col w-full h-full backdrop-brightness-50'>
             <nav id="top_bar">
               <div className='justify-between px-24 py-6 hidden w-full md:block md:w-auto'>
@@ -62,10 +61,10 @@ export default function Home() {
           <button onClick={scrollToProject} className='flex w-full font-thin justify-center text-3xl p-12 hover:font-normal'>Projects ↓</button>
           <div className='flex w-full h-fit'>
             <div className='grid grid-cols-2 w-full bg-gray-900 mx-48 mt-12 mb-32 py-24 px-32 gap-x-16 gap-y-24'>
-                {display_project("Fablr - Visual Novels with GPT-3.5 & DALL-E","Developed a website that is capable of generating visual novels powered by GPT 3.5 and DALL-E API. Utilized NextJS and TailwindCSS to design the website's front end and story layout. Processed and deployed GPT 3.5 and DALL-E backend using Flask.","")}
-                {display_project("QuizForge - MCQ Quiz Generator","Built a web application that makes a Multiple Choice Questions quiz out of any context. Prompt-engineered ChatGPT to generate a personalized quiz from text-based materials or documents. Designed a flexible user input and an interactive Multiple Choice Questions UI using NextJS and TailwindCSS.","")}
-                {display_project("Maple","Maple is a mobile application that helps students perform better when self-studying. Maple works as a virtual assistant. At first, it is required to enter the user’s current study progress. Once entered, it will tell a user whether he/she performs well or not. If not, it will suggest some practice videos related to certain subjects that the user needs to improve. Furthermore, users can chat with Maple if they need advice or better recommendations, or simply chat to get to know each other more.","")}
-                {display_project("Folium","This is where it is. Folium is the my web portfolio as well as my first website that I have developed totally on my own.","")}
+                {display_project("Fablr - Visual Novels with GPT-3.5 & DALL-E","Developed a website that is capable of generating visual novels powered by GPT 3.5 and DALL-E API. Utilized NextJS and TailwindCSS to design the website's front end and story layout. Processed and deployed GPT 3.5 and DALL-E backend using Flask.","/pr_img/fablr.png")}
+                {display_project("QuizForge - MCQ Quiz Generator","Built a web application that makes a Multiple Choice Questions quiz out of any context. Prompt-engineered ChatGPT to generate a personalized quiz from text-based materials or documents. Designed a flexible user input and an interactive Multiple Choice Questions UI using NextJS and TailwindCSS.","/pr_img/quizforge")}
+                {display_project("Maple","Maple is a mobile application that helps students perform better when self-studying. Maple works as a virtual assistant. At first, it is required to enter the user’s current study progress. Once entered, it will tell a user whether he/she performs well or not. If not, it will suggest some practice videos related to certain subjects that the user needs to improve. Furthermore, users can chat with Maple if they need advice or better recommendations, or simply chat to get to know each other more.","/pr_img/maple")}
+                {display_project("Folium","This is where it is. Folium is the my web portfolio as well as my first website that I have developed totally on my own.","/pr_img")}
             </div>
           </div>
           
