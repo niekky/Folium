@@ -39,7 +39,7 @@ export default function Home() {
               </div>
             </nav>
             <div className='flex-col w-full h-full px-32 py-96 transition translate-x-[-600px] hover:translate-x-0 ease-in-out duration-700' id='intro_caption'>
-              <h1 className='text-left text-4xl font-thin w-full'>Hi, my name is ipsum lorem</h1>
+              <h1 className='text-left text-4xl font-thin w-full'>Hi, my name is Nick Nguyen</h1>
               <p className='text-left text-6xl font-medium'>This is my Folium</p>
             </div>
           </div>
@@ -48,11 +48,16 @@ export default function Home() {
 
         <div className='flex h-fit w-full bg-gray-700 space-x-16 py-12 px-48' id="user_layout">
           
-          <Link href={"/contact"} className='rounded-full h-64 w-64 bg-[url("/img/elephantmario.jpg")] bg-center   transition ease-in-out duration-300 hover:scale-110' id="avatar"></Link>
+          <Link href={"/contact"} className='rounded-full h-64 w-64 bg-[url("/img/elephantmario.jpg")] bg-center transition ease-in-out duration-300 hover:scale-110' id="avatar"></Link>
 
           <div className='flex-col min-w-screen m-10 space-y-5'>
-            <p className='text-2xl font-medium'>Mr.AvionicsSkunk</p>
-            <p className='text-lg font-light w-2/3'>ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem sdasdasd asda sda sda sda sda sda sda sd</p>
+            <p className='text-2xl font-medium'>Nick Nguyen</p>
+            <p className='text-lg font-light '>
+              A Sophomore majoring in Computer System Engineering at Arizona State University. Currently having an interest in and working on:  <br></br>
+            - Deep Learning (currently LLM & Cross Modalities Learning)  <br></br>
+            - Web Application Development <br></br>
+            - Embedded Software for Rocket Avionics
+            </p>
             <div className='flex w-full h-fit space-x-4' id='profiles'>
               <Link className='h-8 w-8' href={"https://www.linkedin.com/in/tnguy231/"} id='linkedin'>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M29.63.001H2.362C1.06.001 0 1.034 0 2.306V29.69C0 30.965 1.06 32 2.362 32h27.27C30.937 32 32 30.965 32 29.69V2.306C32 1.034 30.937.001 29.63.001z" fill="#0177b5"/><path d="M4.745 11.997H9.5v15.27H4.745zm2.374-7.6c1.517 0 2.75 1.233 2.75 2.75S8.636 9.9 7.12 9.9a2.76 2.76 0 0 1-2.754-2.753 2.75 2.75 0 0 1 2.753-2.75m5.35 7.6h4.552v2.087h.063c.634-1.2 2.182-2.466 4.5-2.466 4.806 0 5.693 3.163 5.693 7.274v8.376h-4.743V19.84c0-1.77-.032-4.05-2.466-4.05-2.47 0-2.85 1.93-2.85 3.92v7.554h-4.742v-15.27z" fill="#fff"/></svg>
