@@ -30,7 +30,7 @@ function display_project(name: string, desc: string, img: string){
 export default function Home() {
   return (
     <div className='Parent'>
-      <div className='flex-col w-full bg-gray-600'>
+      <div className='flex-col w-full bg-gray-600 text-white'>
         
         <div className='flex-col w-full bg-[url("/img/flightcomputer.png")] bg-center bg-cover' id='intro_background'>
           <div className='flex-col w-full h-full backdrop-brightness-50'>
@@ -63,10 +63,29 @@ export default function Home() {
           <button onClick={scrollToProject} className='flex w-full font-thin justify-center text-3xl p-12 hover:font-normal'>Projects ↓</button>
           <div className='flex w-full h-fit'>
             <div className='grid grid-cols-2 w-full bg-gray-900 mx-48 mt-12 mb-32 py-24 px-32 gap-x-16 gap-y-24'>
-             {display_project("Intro Team L1 High-power Rocket","Built a high-power rocket from cardboard strengthened by fiberglass, L1 motor, drogue and main parachutes. Simulated a rocket performance using OpenRocket. Designed an electronic bay containing an altimeter and 9-volt battery using Solidwork. Launched successfully on the Sun Devil Rocketry Intro Team Launch Day 2023","")}
 
-             {display_project("Inertia Measurement Unit Driver","Implementation of the MPU9250 IMU Driver in C from scratch for the organization's Flight Computer Firmware. We tested this driver and it successfully collected flight state estimation of the organization's rocket from the launch on January 2023","")}
+            <div className='flex-col h-[420px]'>
+              <div className='flex bg-[url("/pr_img/rocket.JPG")] bg-cover bg-center w-full h-5/6 transition ease-in-out duration-300 hover:scale-110 hover:bg-opacity-50' id='project_img'>
+                <div className='flex-col w-full h-full p-12 backdrop-brightness-50 backdrop-blur-sm space-y-3 opacity-0 hover:opacity-100' id='project_desc'>
+                  <p className='text-2xl font-normal'>Intro Team L1 High-power Rocket</p>
+                  <p className='font-thin'>
+                    * Built a high-power rocket from cardboard strengthened by fiberglass, L1 motor, drogue and main parachutes. <br></br>
+                    * Simulated a rocket performance using OpenRocket. Designed an electronic bay containing an altimeter and 9-volt battery using Solidwork. <br></br>
+                    * Launched successfully on the Sun Devil Rocketry Intro Team Launch Day 2023</p>
+                </div>
+              </div>
+              <p className='flex h-1/6 w-full text-center justify-center text-xl items-center' id='project_name'>Intro Team L1 High-power Rocket</p>
+            </div>
 
+            <div className='flex-col h-[420px]'>
+              <div className='flex bg-[url("/pr_img/mpu9250.jpg")] bg-cover w-full h-5/6 transition ease-in-out duration-300 hover:scale-110 hover:bg-opacity-50' id='project_img'>
+                <div className='flex-col w-full h-full p-12 backdrop-brightness-50 backdrop-blur-sm space-y-3 opacity-0 hover:opacity-100' id='project_desc'>
+                  <p className='text-2xl font-normal'>Inertia Measurement Unit Driver</p>
+                  <p className='font-thin'>Implementation of the MPU9250 IMU Driver in C from scratch for the organization's Flight Computer Firmware. We tested this driver and it successfully collected flight state estimation of the organization's rocket from the launch on January 2023</p>
+                </div>
+              </div>
+              <p className='flex h-1/6 w-full text-center justify-center text-xl items-center' id='project_name'>Inertia Measurement Unit Driver</p>
+            </div>
              {/* {display_project("ESP32 Autonomous Car Model","An Autonomous Vehicle that is able to run along the line using light tracker with PID control loop and follow the traffic light whether to stop or not by communicating with the traffic network instead of utilizing image detecting approach. This project involves ESP32 Development Board with RTOS, Firebase Database, and PID Control Loop.","")} */}
             </div>
           </div>
