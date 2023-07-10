@@ -19,11 +19,6 @@ export default function Home() {
     ]
   )
 
-  function showcase_pic(img_url: string){
-    return (
-      <div className="flex keen-slider__slide w-full bg-blue-600 items-end justify-center py-5">pic2</div>
-    )
-  }
 
 
   return (

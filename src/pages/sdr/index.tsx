@@ -81,7 +81,7 @@ export default function Home() {
               <div className='flex bg-[url("/pr_img/mpu9250.jpg")] bg-cover w-full h-5/6 transition ease-in-out duration-300 hover:scale-110 hover:bg-opacity-50' id='project_img'>
                 <div className='flex-col w-full h-full p-12 backdrop-brightness-50 backdrop-blur-sm space-y-3 opacity-0 hover:opacity-100' id='project_desc'>
                   <p className='text-2xl font-normal'>Inertia Measurement Unit Driver</p>
-                  <p className='font-thin'>Implementation of the MPU9250 IMU Driver in C from scratch for the organization's Flight Computer Firmware. We tested this driver and it successfully collected flight state estimation of the organization's rocket from the launch on January 2023</p>
+                  <p className='font-thin'>Implementation of the MPU9250 IMU Driver in C from scratch for the organization Flight Computer Firmware. We tested this driver and it successfully collected flight state estimation of the organization rocket from the launch on January 2023</p>
                 </div>
               </div>
               <p className='flex h-1/6 w-full text-center justify-center text-xl items-center' id='project_name'>Inertia Measurement Unit Driver</p>

@@ -5,20 +5,6 @@ const inter = Inter({ subsets: ['latin'] })
 
 const isBrowser = () => typeof window !== 'undefined';
 
-function display_project(name: string, desc: string, img: string){
-  return (
-    <div className='flex-col h-[420px]'>
-      <div className='flex bg-gray-100 w-full h-5/6 transition ease-in-out duration-300 hover:scale-110 hover:bg-opacity-50' id='project_img'>
-        <div className='flex-col w-full h-full p-12 space-y-3 opacity-0 hover:opacity-100' id='project_desc'>
-          <p className='text-2xl font-normal'>{name}</p>
-          <p className='font-thin'>{desc}</p>
-        </div>
-      </div>
-      <p className='flex h-1/6 w-full text-center justify-center text-xl items-center' id='project_name'>{name}</p>
-    </div>
-  )
-}
-
 function scrollToProject(){
   if (!isBrowser()) return;
   window.scrollTo({ top: 730, behavior: 'smooth' });
@@ -67,7 +53,7 @@ export default function Home() {
                     <p className='text-2xl font-normal'>Fablr - Visual Novels with GPT-3.5 & DALL-E</p>
                     <p className='font-thin'>
                       * Developed a website that is capable of generating visual novels powered by GPT 3.5 and DALL-E API.<br></br>
-                      * Utilized NextJS and TailwindCSS to design the website's front end and story layout. <br></br>
+                      * Utilized NextJS and TailwindCSS to design the website front end and story layout. <br></br>
                       * Processed and deployed GPT 3.5 and DALL-E backend using Flask</p>
                   </div>
                 </div>
@@ -126,3 +112,4 @@ export default function Home() {
     </div>
   )
 }
+
