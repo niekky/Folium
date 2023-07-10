@@ -93,7 +93,7 @@ export default function Home() {
         </div>
         
 
-        <div className='flex h-fit w-full bg-gray-900 p-4 justify-center space-x-1'>
+        <div className='flex h-fit w-full bg-gray-900 p-4 justify-center space-x-1 text-white'>
           <p className='font-thin'>🖥️ Created by niekky</p>
           <p>|</p>
         <Link href={"https://github.com/niekky/Folium"} className='font-medium hover:font-bold'>Folium GitHub 🚀</Link>

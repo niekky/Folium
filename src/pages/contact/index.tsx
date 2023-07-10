@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <div className='Parent'>
-     <div className='flex-col w-full bg-[url("/img/contact.gif")] bg-cover bg-center'>
+     <div className='flex-col w-full bg-[url("/img/contact.gif")] bg-cover bg-center text-white'>
       <div className='flex-col w-full backdrop-brightness-50 backdrop-blur-sm'>
         <nav id="top_bar">
           <div className='justify-between px-24 py-6 hidden w-full md:block md:w-auto'>
@@ -75,7 +75,7 @@ export default function Home() {
       </div>
       
      </div>
-     <div className='flex h-fit w-full bg-gray-900 p-4 justify-center space-x-1'>
+     <div className='flex h-fit w-full bg-gray-900 p-4 justify-center space-x-1 text-white'>
         <p className='font-thin'>🖥️ Created by niekky</p>
         <p>|</p>
         <Link href={"https://github.com/niekky/Folium"} className='font-medium hover:font-bold'>Folium GitHub 🚀</Link>
