@@ -23,9 +23,9 @@ export default function Home() {
         
         <div className='w-full h-screen bg-[url("/img/mcbombpop.gif")] bg-cover bg-center'>
           <div className='flex-col w-full h-full justify-center items-center transition duration-700 ease-in-out backdrop-blur-lg backdrop-brightness-75 hover:backdrop-blur-none' id='background_blur'>
-            <nav id="top_bar">
-              <div className='justify-between px-24 py-4 hidden w-full md:block md:w-auto'>
-                <ul className="flex justify-end font-normal text-2xl flex flex-col md:flex-row md:space-x-12">
+            <nav className='bg-gray-900 bg-opacity-25' id="top_bar">
+              <div className='justify-between px-24 py-2 hidden w-full md:block md:w-auto'>
+                <ul className="flex justify-end font-normal text-xl flex flex-col md:flex-row md:space-x-12">
                   <li>
                     <button onClick={scrollToTop} className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</button>
                   </li>
@@ -37,6 +37,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
+              
             </nav>
             <div className='flex-col w-full h-full px-32 py-96 transition translate-x-[-600px] hover:translate-x-0 ease-in-out duration-700' id='intro_caption'>
               <h1 className='text-left text-white text-4xl font-thin w-full'>Hi, my name is Nick Nguyen</h1>
