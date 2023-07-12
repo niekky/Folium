@@ -42,7 +42,7 @@ export default function Home() {
         </nav>
         <p className='flex text-6xl font-medium px-48 py-12'>About Me</p>
         <div className='flex w-full h-fit bg-gray-700 px-48 py-16' id="user_layout">
-          <div className=' h-64 w-64 bg-[url("/img/elephantmario.jpg")] bg-center rounded-full shrink-0 grow-0' id="avatar"></div>
+          <div className=' h-64 w-64 bg-[url("/img/face1.jpg")] bg-cover rounded-full shrink-0 grow-0' id="avatar"></div>
           <div className='flex-col min-w-screen m-10 space-y-5'>
             <p className='text-2xl font-medium'>Nick Nguyen</p>
             <p className='text-lg font-light w-4/5'>A Sophomore majoring in Computer System Engineering at Arizona State University. I am interested in various CS fields such as Deep Learning, Web Application Development, and Embedded Software Engineering. Currently, I am working with help from APG Research Faculty at ASU to conduct research on the Symbolic Text-to-Music generation model. Additionally, I recently got to lead the Avionics sub-team in Sun Devil Rocketry where we help enhance the avionics system for the organization’s high-power rockets as well as develop highly advanced rockets and mechanisms such as Thrust Vector Controlled and Liquid Powered Rockets.</p>

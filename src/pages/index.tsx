@@ -48,7 +48,7 @@ export default function Home() {
 
         <div className='flex h-fit w-full bg-gray-700 space-x-16 py-12 px-48' id="user_layout">
           
-          <Link href={"/contact"} className='rounded-full h-64 w-64 bg-[url("/img/elephantmario.jpg")] bg-center transition ease-in-out duration-300 hover:scale-110' id="avatar"></Link>
+          <Link href={"/contact"} className='rounded-full h-64 w-64 bg-[url("/img/face1.jpg")] bg-cover transition ease-in-out duration-300 hover:scale-110' id="avatar"></Link>
 
           <div className='flex-col text-white min-w-screen m-10 space-y-5'>
             <p className='text-2xl font-medium'>Nick Nguyen</p>
