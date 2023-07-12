@@ -61,10 +61,10 @@ export default function Home() {
 
           </div>
         </div>
-        <div className='flex-col w-full h-screen bg-gray-800 px-48' id="showcase">
-          <p className='flex w-full justify-center text-6xl font-thin p-10'> Me Momento!</p>
-          <div ref={sliderRef} className='flex w-full h-4/5 keen-slider font-medium'>
-            <div className="flex keen-slider__slide w-full bg-[url('/me_img/lday1.jpg')] bg-cover items-end justify-center  py-5">Sun Devil Rocketry October Launch Day</div>
+        <div className='flex-col w-full h-screen bg-gray-800 px-96' id="showcase">
+          <p className='flex w-full justify-center text-6xl font-thin pt-32 pb-10'> Me Momento!</p>
+          <div ref={sliderRef} className='flex w-full h-[640px] keen-slider font-medium'>
+            <div className="flex keen-slider__slide w-full bg-[url('/me_img/lday1.jpg')] bg-cover items-end justify-center py-5">Sun Devil Rocketry October Launch Day</div>
             <div className="flex keen-slider__slide w-full bg-[url('/me_img/lday2.jpg')] bg-cover bg-bottom items-end justify-center py-5"></div>
             <div className="flex keen-slider__slide w-full bg-[url('/me_img/fctokyo.jpg')] bg-cover bg-center items-end justify-center py-5">SDR Flight Computer at Tokyo</div>
             <div className="flex keen-slider__slide w-full bg-[url('/me_img/liquid.jpg')] bg-cover bg-center items-end justify-center py-5">Setting up Liquid Hot-fire Test</div>
