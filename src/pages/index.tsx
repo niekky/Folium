@@ -52,7 +52,7 @@ export default function Home() {
           <Link href={"/contact"} className='rounded-full h-32 lg:h-48 xl:h-64 w-32 lg:w-48 xl:w-64 bg-[url("/img/face1.jpg")] shrink-0 grow-0 bg-cover transition ease-in-out duration-300 hover:scale-110' id="avatar"></Link>
 
           <div className='flex-col text-white min-w-screen xl:m-10 space-y-2 xl:space-y-5'>
-            <p className='text-base lg:text-lg xl:text-2xl font-medium'>Nick Nguyen</p>
+            <p className='text-sm lg:text-lg xl:text-2xl font-medium'>Nick Nguyen</p>
             <p className='text-xs lg:text-sm xl:text-lg font-light '>
               A Sophomore majoring in Computer System Engineering at Arizona State University. Currently having an interest in and working on:  <br></br>
             - Deep Learning (currently LLM & Cross Modalities Learning)  <br></br>
@@ -80,17 +80,17 @@ export default function Home() {
           <p className='flex justify-left text-sm xl:text-lg font-thin pb-12 sm:w-2/3'>Here are some of my finished/ongoing projects categorized in each field:</p>
           <div className='flex h-32 sm:h-48 lg:h-72 xl:h-96 w-full justify-center sm:py-3 xl:py-6'>
             <Link href={"/sdr"} className='flex w-1/3 bg-[url("/img/flightcomputer.png")] bg-center bg-cover text-xs lg:text-xl xl:text-3xl font-thin items-center justify-center transition ease-in-out duration-300 hover:font-normal hover:shadow-inner-xl hover:scale-105 xl:hover:-translate-x-3 hover:-translate-x-1'>
-              <div className='flex w-full h-full xl:backdrop-blur-sm backdrop-brightness-50 items-center justify-center transition ease-in-out duration-300 hover:backdrop-blur-none'>
+              <div className='flex w-full h-full backdrop-blur-sm backdrop-brightness-50 items-center justify-center transition ease-in-out duration-300 hover:backdrop-blur-none'>
                 Embedded & Rocketry
               </div>
             </Link>
             <Link href={"/application"} className='flex w-1/3 bg-[url("/img/softwaresample.jpeg")] bg-center bg-cover text-xs lg:text-xl xl:text-3xl font-thin items-center justify-center transition ease-in-out duration-300 hover:font-normal hover:shadow-inner-xl hover:scale-105 hover:-translate-y-1'>
-              <div className='flex w-full h-full xl:backdrop-blur-sm backdrop-brightness-75 items-center justify-center transition ease-in-out duration-300 hover:backdrop-blur-none'>
+              <div className='flex w-full h-full backdrop-blur-sm backdrop-brightness-75 items-center justify-center transition ease-in-out duration-300 hover:backdrop-blur-none'>
                 Software Application
               </div>
             </Link>
             <Link href={"/research"} className='flex w-1/3 bg-[url("/img/AIsample.jpg")] bg-center bg-cover text-sm lg:text-xl xl:text-3xl font-thin items-center justify-center transition ease-in-out duration-300 hover:font-normal hover:shadow-inner-xl hover:scale-105 xl:hover:translate-x-3 hover:translate-x-1'>
-              <div className='flex w-full h-full xl:backdrop-blur-sm backdrop-brightness-50 items-center justify-center transition ease-in-out duration-300 hover:backdrop-blur-none'>
+              <div className='flex w-full h-full backdrop-blur-sm backdrop-brightness-50 items-center justify-center transition ease-in-out duration-300 hover:backdrop-blur-none'>
                 AI Research
               </div>
             </Link>

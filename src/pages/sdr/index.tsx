@@ -49,42 +49,42 @@ export default function Home() {
                 </ul>
               </div>
             </nav>
-            <p className='flex font-medium text-6xl px-48 py-36'>Embedded Software & Rocketry</p>
+            <p className='flex font-medium text-3xl md:text-4xl xl:text-6xl px-12 md:px-24 xl:px-48 py-36'>Embedded Software & Rocketry</p>
           </div>
           
         </div>
         
-        <div className='flex-col w-full h-fit bg-gray-700 px-48 py-24 space-y-4' id='detail'>
-          <p className='flex font-medium text-3xl'>Overview</p>
-          <p className='flex font-thin text-lg w-2/3'>These works involve High-Power Rocketry and Rocket Avionics developed in Embedded C with STM32. These projects were made to allow Sun Devil Rocketry’s rocket to utilize some features such as dual deployment, logging flight state estimation, and GPS coordination.</p>
+        <div className='flex-col w-full h-fit bg-gray-700 px-12 md:px-24 xl:px-48 py-24 space-y-4' id='detail'>
+          <p className='flex font-medium text-xl md:text-3xl'>Overview</p>
+          <p className='flex font-thin text-sm md:text-lg w-2/3'>These works involve High-Power Rocketry and Rocket Avionics developed in Embedded C with STM32. These projects were made to allow Sun Devil Rocketry’s rocket to utilize some features such as dual deployment, logging flight state estimation, and GPS coordination.</p>
         </div>
        
         <div className='flex-col w-full h-fit bg-gray-800'>
           <button onClick={scrollToProject} className='flex w-full font-thin justify-center text-3xl p-12 hover:font-normal'>Projects ↓</button>
           <div className='flex w-full h-fit'>
-            <div className='grid grid-cols-2 w-full bg-gray-900 mx-48 mt-12 mb-32 py-24 px-32 gap-x-16 gap-y-24'>
+            <div className='grid grid-cols-2 w-full bg-gray-900 xl:mx-48 mt-12 mb-32 py-24 px-16 xl:px-32 gap-x-16 gap-y-24'>
 
-            <div className='flex-col h-[420px]'>
-              <div className='flex bg-[url("/pr_img/rocket.JPG")] bg-cover bg-center w-full h-5/6 transition ease-in-out duration-300 hover:scale-110 hover:bg-opacity-50' id='project_img'>
-                <div className='flex-col w-full h-full p-12 backdrop-brightness-50 backdrop-blur-sm space-y-3 opacity-0 hover:opacity-100' id='project_desc'>
-                  <p className='text-2xl font-normal'>Intro Team L1 High-power Rocket</p>
-                  <p className='font-thin'>
+            <div className='flex-col h-[240px] sm:h-[420px] transition ease-in-out duration-300 hover:scale-110'>
+              <div className='flex bg-[url("/pr_img/rocket.JPG")] bg-cover bg-center w-full h-5/6 transition ease-in-out duration-300 hover:bg-opacity-50' id='project_img'>
+                <div className='flex-col w-full h-full p-3 md:p-12 backdrop-brightness-50 backdrop-blur-sm space-y-3 opacity-0 hover:opacity-100 overflow-auto' id='project_desc'>
+                  <p className='text-xs sm:text-xl xl:text-2xl font-normal'>Intro Team L1 High-power Rocket</p>
+                  <p className='text-xs xl:text-base font-thin'>
                     * Built a high-power rocket from cardboard strengthened by fiberglass, L1 motor, drogue and main parachutes. <br></br>
                     * Simulated a rocket performance using OpenRocket. Designed an electronic bay containing an altimeter and 9-volt battery using Solidwork. <br></br>
                     * Launched successfully on the Sun Devil Rocketry Intro Team Launch Day 2023</p>
                 </div>
               </div>
-              <p className='flex h-1/6 w-full text-center justify-center text-xl items-center' id='project_name'>Intro Team L1 High-power Rocket</p>
+              <p className='flex w-full text-center justify-center text-xs sm:text-xl items-center p-2' id='project_name'>Intro Team L1 High-power Rocket</p>
             </div>
 
-            <div className='flex-col h-[420px]'>
-              <div className='flex bg-[url("/pr_img/mpu9250.jpg")] bg-cover w-full h-5/6 transition ease-in-out duration-300 hover:scale-110 hover:bg-opacity-50' id='project_img'>
-                <div className='flex-col w-full h-full p-12 backdrop-brightness-50 backdrop-blur-sm space-y-3 opacity-0 hover:opacity-100' id='project_desc'>
-                  <p className='text-2xl font-normal'>Inertia Measurement Unit Driver</p>
-                  <p className='font-thin'>Implementation of the MPU9250 IMU Driver in C from scratch for the organization Flight Computer Firmware. We tested this driver and it successfully collected flight state estimation of the organization rocket from the launch on January 2023</p>
+            <div className='flex-col h-[240px] sm:h-[420px] transition ease-in-out duration-300 hover:scale-110'>
+              <div className='flex bg-[url("/pr_img/mpu9250.jpg")] bg-cover bg-center w-full h-5/6 transition ease-in-out duration-300 hover:bg-opacity-50' id='project_img'>
+                <div className='flex-col w-full h-full p-3 md:p-12 backdrop-brightness-50 backdrop-blur-sm space-y-3 opacity-0 hover:opacity-100 overflow-auto' id='project_desc'>
+                  <p className='text-xs sm:text-xl xl:text-2xl font-normal'>Inertia Measurement Unit Driver</p>
+                  <p className='text-xs xl:text-base font-thin'>Implementation of the MPU9250 IMU Driver in C from scratch for the organization Flight Computer Firmware. We tested this driver and it successfully collected flight state estimation of the organization rocket from the launch on January 2023</p>
                 </div>
               </div>
-              <p className='flex h-1/6 w-full text-center justify-center text-xl items-center' id='project_name'>Inertia Measurement Unit Driver</p>
+              <p className='flex w-full text-center justify-center text-xs sm:text-xl items-center p-2' id='project_name'>Inertia Measurement Unit Driver</p>
             </div>
              {/* {display_project("ESP32 Autonomous Car Model","An Autonomous Vehicle that is able to run along the line using light tracker with PID control loop and follow the traffic light whether to stop or not by communicating with the traffic network instead of utilizing image detecting approach. This project involves ESP32 Development Board with RTOS, Firebase Database, and PID Control Loop.","")} */}
             </div>
